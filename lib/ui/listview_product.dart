@@ -20,7 +20,8 @@ class _ListViewProductState extends State<ListViewProduct> {
   @override
   void initState() {
     super.initState();
-    items = new List();
+
+    items = List<Product>.empty(growable: true);
     _onProductAddedSubscription =
         productReference.onChildAdded.listen(_onProductAdded);
     _onProductChangedSubscription =

@@ -10,6 +10,8 @@ class Product {
   String _stock;
   String _productImage;
 
+
+
   Product(this._id,this._name,this._codebar,this._description,
       this._price,this._stock,this._productImage);
 
